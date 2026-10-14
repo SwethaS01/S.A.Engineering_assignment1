@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+         body {
+            position: relative; 
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding-top: 20px;
+        }
+        h3,h1{
+            color: rgb(27, 27, 135);
+        }
+        /* .button{
+            color: rgb(27, 27, 135);
+            
+        } */
+        a{
+            color: blue;
+        }
+        hr{
+            color: rgb(27, 27, 135);
+        }
+        .center{
+            
+        text-align: center;       
+        margin: 30px auto;          
+        background-color: #f0f4f8;  
+        padding: 20px;              
+        border-radius: 8px;  
+        max-width: 70%;       
+        /* border-left: 5px solid rgb(27, 27, 135);  */
+        }
+        .resume-photo {
+            position: absolute;
+            top: 20px;       
+            right: 40px;     
+            width: 150px;    
+            height: 150px;   
+            object-fit: cover; 
+            border-radius: 50%; 
+            object-position: top center;
+
+        }
+            .top-buttons{
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            gap: 15px;
+            margin: 20px;
+            flex-wrap: wrap
+        }
+        
+        
+        button:hover {
+            background-color: rgb(15, 15, 90); 
+            cursor: pointer;
+        }
+
+        
+        body.dark-mode {
+            background-color: #0f172a; 
+            color: #f1f5f9;            
+        }
+
+        body.dark-mode h1,
+        body.dark-mode h2,
+        body.dark-mode h3 {
+            color: #38bdf8;            
+        }
+
+        body.dark-mode a {
+            color: #60a5fa;           
+        }
+
+        body.dark-mode table {
+            background-color: #1e293b; 
+            color: white;
+        }
+
+        body.dark-mode th,
+        body.dark-mode td {
+            border-color: #38bdf8;     
+        }
+        body.dark-mode .center {
+            background-color: #1e293b; 
+            color: #f1f5f9;            
+        }
+
+        body.dark-mode p,
+        body.dark-mode td,
+        body.dark-mode th,
+        body.dark-mode label {
+            color: #f1f5f9;            
+        }
+        button {
+            background-color: rgb(27, 27, 135); /* Royal Blue Theme */
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+           
+        }
+                
+                .resume-frame {
+            border: 3px solid rgb(27, 27, 135); 
+            border-radius: 8px;
+            padding: 40px;                   
+            margin: 30px auto;              
+            background-color: #ffffff; 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: relative; 
+            
+            
+            width: 210mm;                    
+            min-height: 297mm;              
+            box-sizing: border-box;         
+        }
+
+       
+        body.dark-mode .resume-frame {
+            border-color: #38bdf8;          
+            background-color: #111827;     
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+        }
+
+    
+        .resume-frame p, .resume-frame table {
+            max-width: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<div class="top-buttons">
+
+    <!-- <button id="photoBtn" onclick="togglePhoto()">
+        Show Profile Picture
+    </button> -->
+
+    <button id="themeBtn" onclick="toggleTheme()">
+        Dark Mode
+    </button>
+    <button id="showlable">Show Image</button>
+</div>
+<div class="resume-frame">
+    <div class="center">
+    <h1>SWETHA S</h1>
+    <p>Aspiring Full-Stack Developer | UI/UX Enthusiast<br>
+        swethanarayanan2005@gmail.com | +91 9710261121 | Pattabiram, Chennai - 600072<br></p>
+        <a href="https://www.linkedin.com/in/swetha-s-17960a2a4" target = "new">linkedin.com/in/swetha-s-17960a2a4 </a>|<a href="https://github.com/SwethaS01" target = "new">github.com/SwethaS01</a>
+        <!-- <img src="swetha S.jpg" alt="Profile Picture" class="resume-photo"><br>
+        
+        <button id ="show">show</button>
+    <label id ="showlable"></label> -->
+    <br><br>
+    
+
+
+<img id="resumeImage" src="swetha S.jpg" alt="Profile Picture"  class="resume-photo"onclick="hideImage()" style="cursor: pointer;">
+
+        
+    </div>
+     
+        <hr>
+    <h3>PROFESSIONAL SUMMARY</h3>
+    <hr>
+    <p>Computer Science Engineering student with hands-on internship experience in front-end and full-stack web development.
+        Skilled in building responsive websites, backend systems, and user-friendly applications using HTML, CSS, JavaScript,
+        React.js, Node.js, and MongoDB. Strong foundation in C, Python, Java, and database management, with a keen interest in
+        UI/UX design. Eager to apply practical project experience and a collaborative mindset to an entry-level software development
+        role.</p>
+    <h3>EDUCATION</h3>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Qualification</th>
+            <th>Name of Institution</th>
+            <th>year of Passing</th>
+            <th>Mark obtained</th>
+        </tr>
+        <tr>
+            <td>B.E.CSE</td>
+            <td>S.A Engineering College </td> 
+            <td>2023-2027</td>
+            <td>CGPA 9.12</td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>Immanuel Mat. Hr. Sec. School</td> 
+            <td>2022-2023</td>
+            <td>77.8%</td>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>Immanuel Mat. Hr. Sec. School</td> 
+            <td>2020-2023</td>
+            <td>80%</td>
+        </tr>
+    </table>
+
+    <h3>TECHNICAL SKILLS</h3>
+    <hr>
+    <p>Languages:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C, Python, Java, JavaScript<br>
+        Web Technologies:&nbsp;&nbsp; HTML, CSS, React.js, Node.js<br>
+        Database:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MySQL, MongoDB, SQL Queries, Database Design<br>
+        Design Tools:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figma, Prototyping, UI Design, Design Systems<br>
+        Tools & Platforms:&nbsp;&nbsp;&nbsp; Git, GitHub, VS Code</p>
+        <h3>AREAS OF INTEREST</h3>
+        <hr>
+        <p>• Full-Stack Web Development<br> • Application Development<br> • UI/UX Design & Prototyping<br> • Mobile App UI Design</p>
+        <h3>INTERNSHIP EXPERIENCE</h3>
+        <hr>
+        <p><b>C & Qt Development Intern — CVRDE</b><br>
+            Developed a GUI-based application using C and Qt, implementing core logic and integrating features; gained hands-on
+            experience in debugging, testing, and real-world project workflows.<br>
+            <b>Frontend Developer Intern — Amihive Software Solution</b><br>
+            Built and enhanced Billing, Reports, Inventory, and Settings modules for a billing application using React.js, creating
+            responsive, component-based, user-friendly interfaces.<br>
+            <b>Web Developer Intern — Bonbloc Technologies Limited</b><br>
+            Developed an Employee Management System covering both frontend and backend; executed test cases, identified bugs,
+            and prepared test documentation.</p>
+            <h3>PROJECTS</h3>
+            <hr>
+            <p><b>Cognita Nexus</b><a href="https://cognitanexus.netlify.app/" target = "new">[Live Project: cognita neuxs]</a><br>
+                 Technology: React.js, Express.js, MongoDB, Node.js<br>
+                 Developing a networking web application designed to bridge the gap and facilitate mentorship connectivity between juniors and seniors.<br>
+                <b>DreamEstate Pro</b><br>
+                Technology: HTML, CSS, JavaScript, Node.js, MongoDB<br>
+                A real estate web application with authentication, property listing, cart system, and payment integration with full backend
+                connectivity.<br>
+                <b>Turf Booking System</b><br>
+                Technology: HTML, CSS<br>
+                A responsive sports turf booking website allowing users to check availability, pricing, and book slots easily.<br>
+                <b>Crave – Food Delivery App</b><br>
+                Technology: UI/UX Design<br>
+                A modern food delivery mobile app UI focused on clean layout, smooth navigation, and user experience.</p>
+            <h3>CERTIFICATIONS</h3>
+            <hr>
+            <p>• Programming in Java – Elite Certificate, 60% (Jul–Oct 2024)<br>
+                • Pearson Level 10<br>
+                • AWS Academy Cloud Foundations<br>
+                • MATLAB Coder Onramp<br>
+                • HackerRank Certificate in SQL</p><br><br>
+                
+                    <button id ="count" class="button" >Download</button>
+                    <label id ="pluse"></label>
+                </div>
+                
+                <script>
+                    // console.log("Hello World")
+                    var count =0;
+                    const downloadbutton = document.getElementById('count');
+                    const downloadlabel = document.getElementById('pluse');
+                    downloadbutton.addEventListener('click',function(){
+                        count = count+1;
+                        // label.textContent=count
+                        downloadlabel.textContent= `Download : ${count}`
+                        // window.print();
+                    })
+                    // var boolean;
+        const img = document.getElementById('resumeImage');
+        const button = document.getElementById('showlable');
+        button.addEventListener('click',function(){
+            if(img.style.display==="none"){
+                img.style.display="block";
+                button.textContent = "Hide image"
+            }else{
+                img.style.display="none"
+                button.textContent = "Show image"
+            }
+        })
+        
+        let darkMode = false;
+
+function toggleTheme() {
+
+    darkMode = !darkMode;
+
+    const button = document.getElementById("themeBtn");
+
+    if (darkMode == true) {
+        document.body.classList.add("dark-mode");
+        button.textContent = "Light Mode";
+    } else {
+        document.body.classList.remove("dark-mode");
+        button.textContent = "Dark Mode";
+    }
+}
+
+
+
+
+                    </script>
+
+</body>
+
+
+
+</html>
