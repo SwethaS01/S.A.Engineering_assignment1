@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Registration Form</title>
+    
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        .form-title {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #0B3C5D;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        
+        .form-subtext {
+            font-size: 9.5pt;
+            color: #555555;
+            text-align: center;
+            margin: 0 0 25px 0;
+        }
+
+       
+        .form-container a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+      
+        .section-heading {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #0B3C5D;
+            border-bottom: 1px solid #0B3C5D;
+            padding-bottom: 4px;
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #222222;
+            margin-bottom: 5px;
+        }
+
+        /* Input & Select Fields: 9.5 pt text styling */
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group input[type="password"],
+        .form-group select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 9.5pt;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            outline: none;
+            background-color: #ffffff;
+            transition: border-color 0.2s ease;
+        }
+
+        /* Input Focus State */
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #0B3C5D;
+        }
+
+        /* Checkbox & Terms Alignment */
+        .terms-group {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .terms-group input {
+            margin-top: 2px;
+            margin-right: 8px;
+        }
+
+        .terms-group label {
+            font-size: 9.5pt;
+            color: #222222;
+            line-height: 1.4;
+        }
+
+        /* Submit Button: 11 pt, dark blue */
+        .submit-btn {
+            width: 100%;
+            background-color: #0B3C5D;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Button Hover Effect */
+        .submit-btn:hover {
+            background-color: #07253a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        
+        <h1 class="form-title">Account Registration</h1>
+        <p class="form-subtext">
+            Already registered? <a href="#">Log in here</a>
+        </p>
+
+        <form action="#" method="POST">
+            
+            <!-- Section 1 -->
+            <h2 class="section-heading">Personal Details</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reg-first-name">First Name</label>
+                    <input type="text" id="reg-first-name" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-last-name">Last Name</label>
+                    <input type="text" id="reg-last-name" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reg-dob">Date of Birth</label>
+                    <input type="date" id="reg-dob" name="dateOfBirth" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-gender">Gender Identity</label>
+                    <select id="reg-gender" name="gender">
+                        <option value="">Select option</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="non-binary">Non-binary</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <h2 class="section-heading">Contact Information</h2>
+
+            <div class="form-group">
+                <label for="reg-email">Primary Email Address</label>
+                <input type="email" id="reg-email" name="emailAddress" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reg-phone">Mobile Phone Number</label>
+                    <input type="tel" id="reg-phone" name="phoneNumber">
+                </div>
+                <div class="form-group">
+                    <label for="reg-country">Country of Residence</label>
+                    <select id="reg-country" name="country" required>
+                        <option value="">Choose country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="IN">India</option>
+                        <option value="AU">Australia</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <h2 class="section-heading">Security Credentials</h2>
+
+            <div class="form-group">
+                <label for="reg-username">Unique Username</label>
+                <input type="text" id="reg-username" name="username" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="reg-password">Create Password</label>
+                    <input type="password" id="reg-password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-confirm-password">Confirm Password</label>
+                    <input type="password" id="reg-confirm-password" name="confirmPassword" required>
+                </div>
+            </div>
+
+            <div class="terms-group">
+                <input type="checkbox" id="reg-terms-agreement" name="termsAgreement" required>
+                <label for="reg-terms-agreement">
+                    I state that all information provided is accurate and I accept the <a href="#">User Agreement</a> and <a href="#">Data Privacy Policy</a>.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Complete Registration</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <style>
+        
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        
+        .form-title {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #0B3C5D;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        
+        .form-subtext {
+            font-size: 9.5pt;
+            color: #555555;
+            text-align: center;
+            margin: 0 0 25px 0;
+        }
+
+        
+        .form-container a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        .section-heading {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #0B3C5D;
+            border-bottom: 1px solid #0B3C5D;
+            padding-bottom: 4px;
+            margin: 25px 0 15px 0;
+            text-transform: uppercase;
+        }
+
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 9.5pt;
+            font-weight: bold;
+            color: #222222;
+            margin-bottom: 5px;
+        }
+
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"]
+         {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 9.5pt;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        
+        .form-group input:focus {
+            border-color: #0B3C5D;
+        }
+
+       
+        .terms-group {
+            margin: 20px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .terms-group input {
+            margin-top: 2px;
+            margin-right: 8px;
+        }
+
+        .terms-group label {
+            font-size: 9.5pt;
+            color: #222222;
+            line-height: 1.4;
+        }
+
+        
+        .submit-btn {
+            width: 100%;
+            background-color: #0B3C5D;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #07253a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        
+        <h1 class="form-title">Create Account</h1>
+        <p class="form-subtext">
+            Already have an account? <a href="#">Log in here</a>
+        </p>
+
+        <form action="#" method="POST">
+            
+            <h2 class="section-heading">Personal Information</h2>
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-phone">Mobile Phone Number</label>
+                <input type="tel" id="reg-phone" name="phoneNumber">
+            </div>
+            <h2 class="section-heading">Security</h2>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="terms-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Register Now</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

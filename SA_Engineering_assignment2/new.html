@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref ="styleshteet" herf="Script.js">
+    <title>Document</title>
+</head>
+<body>
+    <button id ="count">count</button>
+    <label id ="pluse">+1</label>
+    
+    <script>
+        // console.log("Hello World")
+        var count =0;
+        const button = document.getElementById('count');
+        const label = document.getElementById('pluse');
+        button.addEventListener('click',function(){
+            count = count+1;
+            // label.textContent=count
+            label.textContent= `Counter : ${count}`
+        })
+
+
+        </script>
+
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref ="styleshteet" herf="Script.js">
+    <title>Document</title>
+    <style>
+        .show{
+            color: red;
+        }
+        .hide{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <button id ="show">show</button>
+    <label id ="showlable"></label>
+    
+    <script>
+        // console.log("Hello World")
+        var boolean;
+        const button = document.getElementById('show');
+        const label = document.getElementById('showlable');
+        button.addEventListener('click',function(){
+            boolean =!boolean;
+            // label.textContent= `${boolean?"Lable is visible":""}`
+             label.textContent= `${boolean?"Lable is visible":"Lable is not visible"}`
+             label.className=`${boolean?"show":"hide"}`
+        })
+
+
+        </script>
+
+    
+</body>
+</html>
